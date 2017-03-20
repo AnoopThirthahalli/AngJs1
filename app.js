@@ -10,13 +10,14 @@
      var totalNmaeValue=calculateNumericString($scope.name);
       $scope.totalValue=totalNmaeValue;
     };
-    
+
     function calculateNumericString(string) {
       var totString=0;
-      for(var i=0;i<string.length;i++)
-      {
-        totString+=string.charCodeAt(i);
-      }
+      totString=string.length;
+      // for(var i=0;i<string.length;i++)
+      // {
+      //   totString+=string.charCodeAt(i);
+      // }
       return totString;
       }
   });
