@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html  >
   <head>
     <meta charset="utf-8">
-    <title>Anoop</title>
+    <script src="angular.min.js" ></script>
+    <script  src="app.js"></script>
+    <style></style>
+    <title>Name Calculator</title>
   </head>
-  <body>
-   <h1>Commit Check</h1>
+  <body  ng-app="NameCalculator">
+   <h1>NameCalculator</h1>
+   <div  ng-controller="NameCalculatorController" >
+     <div >
+     Enter Name
+     <input type="text" ng-model="name"
+     ng-keyup="displayNumeric();">
+    </div>
+    <div >
+      Total Number{{totalValue}}
+    </div>
+   </div>
   </body>
 </html>
